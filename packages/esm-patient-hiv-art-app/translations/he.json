@@ -1,9 +1,16 @@
 {
+  "add": "Add",
+  "clientEnrollment": "Client enrollment",
+  "dateFilled": "Date Filled",
+  "dateTested": "Date Tested",
   "errorLoadingTrendsChart": "VL & CD4 Chart error",
   "HIV & ART Treatment": "HIV & ART Treatment",
   "loading": "טוען",
+  "place": "Place",
   "value": "Value",
   "viralEmpty": "Viral load & CD4 ",
   "viralLoadAndCDTrend": "Viral load and CD4 trends",
+  "visitTime": "Visit Time",
+  "visitType": "Visit Type",
   "vL&CD4Chart": "VL & CD4 Chart"
 }
