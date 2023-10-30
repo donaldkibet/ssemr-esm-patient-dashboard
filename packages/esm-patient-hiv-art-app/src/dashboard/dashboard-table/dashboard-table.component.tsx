@@ -9,7 +9,7 @@ interface DashboardTableProps {
   patientUuid: string;
   tableHeaders: Array<Record<string, string>>;
   tableRows: Array<any>;
-  launchForm: (formUuid: string) => void;
+  launchForm: () => void;
   dashboardTitle: string;
 }
 
@@ -19,7 +19,7 @@ const DashboardTable: React.FC<DashboardTableProps> = ({ launchForm, tableHeader
   const { results, currentPage, goTo } = usePagination(tableRows, 10);
 
   if (tableRows.length === 0) {
-    return <EmptyState displayText={dashboardTitle} headerTitle={dashboardTitle} />;
+    return <EmptyState displayText={dashboardTitle} headerTitle={dashboardTitle} launchForm={launchForm} />;
   }
   return (
     <div>
@@ -28,7 +28,7 @@ const DashboardTable: React.FC<DashboardTableProps> = ({ launchForm, tableHeader
           kind="ghost"
           renderIcon={(props) => <Add size={16} {...props} />}
           iconDescription={t('add', 'Add')}
-          onClick={() => launchForm('')}
+          onClick={() => launchForm()}
         >
           {t('add', 'Add')}
         </Button>
