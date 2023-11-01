@@ -11,8 +11,8 @@ interface HIVArtDashboardProps {
 
 const dashboardPanelMap = {
   clientEnrollment: {
-    formUuid: 'cf245d5c-9e6b-46f5-bf07-1c2746a9e54d', // HIV ENROLLMENT FORM
-    encounterType: '81da9590-3f10-11e4-adec-0800271c1b75', // ADMISSION
+    formUuid: '2d27155e-f40c-4339-b292-232fa4ac53ff', // HIV ENROLLMENT FORM
+    encounterType: 'f469b65f-a4f6-4723-989a-46090de6a0e5', // ADMISSION
     dashboardTitle: 'Client enrollment',
     errorMessage: 'Client enrollment',
   },
