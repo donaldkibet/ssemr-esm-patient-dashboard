@@ -21,6 +21,23 @@
         "title": "HIV & ART Treatment",
         "columnSpan": 4
       }
+    },
+    {
+      "name": "home-hivcare-and-art-dashboard-link",
+      "component": "homeHIVCareAndARTLink",
+      "slot": "homepage-dashboard-slot",
+      "meta": {
+        "name": "hivcare-and-art",
+        "slot": "hivcare-and-art-dashboard-slot",
+        "title": "HIV Care and ART"
+      },
+      "online": true,
+      "offline": true
+    },
+    {
+      "name": "root-art-dashboard",
+      "slot": "hivcare-and-art-dashboard-slot",
+      "component": "rootHome"
     }
   ],
   "pages": []
