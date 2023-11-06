@@ -11,35 +11,34 @@ interface HIVArtDashboardProps {
 
 const dashboardPanelMap = {
   clientEnrollment: {
-    formUuid: '2d27155e-f40c-4339-b292-232fa4ac53ff', // HIV ENROLLMENT FORM
-    encounterType: 'f469b65f-a4f6-4723-989a-46090de6a0e5', // ADMISSION
+    formUuid: '2d27155e-f40c-4339-b292-232fa4ac53ff',
+    encounterType: 'f469b65f-a4f6-4723-989a-46090de6a0e5',
     dashboardTitle: 'Client enrollment',
     errorMessage: 'Client enrollment',
   },
   initialHIVCareAndART: {
-    formUuid: 'a5b831b5-168f-4de3-9975-7277f3ed4945',
-    encounterType: '81852aee-3f10-11e4-adec-0800271c1b75', // CONSULTATION
+    formUuid: '81852aee-3f10-11e4-adec-0800271c1b75',
+    encounterType: 'a09b3092-2408-4bc7-b23e-ca126f575bdd',
     dashboardTitle: 'Initial HIV care and ART',
     errorMessage: 'Initial HIV care and ART',
   },
   artTreatmentInteruption: {
-    formUuid: '5560f1f1-0903-4853-89d0-70365282ceb9',
-    encounterType: '82024e00-3f10-11e4-adec-0800271c1b75', // LAB RESULTS
+    formUuid: '32229880-468e-4ce2-96bd-a61a999c1743',
+    encounterType: '23299285-25b0-494f-b4e3-546f208762e8',
     dashboardTitle: 'ART treatment interruption',
     errorMessage: 'ART treatment interruption',
   },
-  treatmentOutcome: {
-    formUuid: '652ba093-39f7-4ef1-8d0b-ad00c2dd5d2a',
-    encounterType: '81fbaddd-3f10-11e4-adec-0800271c1b75', // INVESTIGATION
-    dashboardTitle: 'Treatment outcome',
-    errorMessage: 'Treatment outcome',
+  endOfFollowUp: {
+    formUuid: '3bf40d2b-c8a2-4a7d-9da2-adb33860e0f8',
+    encounterType: '3bf40d2b-c8a2-4a7d-9da2-adb33860e0f8',
+    dashboardTitle: 'End of Follow-up',
+    errorMessage: 'end of Follow-up',
   },
 };
 
 const HIVArtDashboard: React.FC<HIVArtDashboardProps> = ({ patientUuid }) => {
   const { t } = useTranslation();
   const { encounters, isLoading, error } = usePatientEncounters(patientUuid);
-  console.log('encounters', encounters);
   return (
     <Tabs>
       <TabList aria-label="List of tabs" contained>
