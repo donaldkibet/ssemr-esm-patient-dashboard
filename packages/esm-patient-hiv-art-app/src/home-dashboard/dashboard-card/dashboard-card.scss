@@ -1,0 +1,24 @@
+@use '@carbon/styles/scss/spacing';
+@use '@carbon/colors';
+@use '@carbon/styles/scss/type';
+
+
+.dashboardCardContainer{
+    border-radius: 10px;
+    border: 1px solid colors.$gray-40;
+    width: 321px;
+    height: 154px;
+    padding: spacing.$spacing-05;
+}
+
+.label{
+    @include type.type-style("body-compact-02");
+    font-size: 1.5rem;
+    color:  #666666;
+    margin: spacing.$spacing-05 0
+}
+
+.count {
+    @include type.type-style("heading-07");
+    color: colors.$gray-100;
+}

@@ -4,3 +4,10 @@ export const dashboardMeta = {
   path: 'HIV & ART Treatment',
   title: 'HIV & ART Treatment',
 };
+
+export const homeDashboardMeta = {
+  slot: 'hivcare-and-art-dashboard-slot',
+  path: 'hivcare-and-art',
+  title: 'HIV Care and ART',
+  name: 'hivcare-and-art',
+};
