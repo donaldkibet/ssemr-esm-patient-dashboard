@@ -8,6 +8,10 @@
 .dashboardCard{
     margin: spacing.$spacing-05 0;
 }
+
+.header {
+    min-height: 5rem
+}
 .title {
     @include type.type-style("heading-05");
     color: colors.$gray-100;
@@ -15,8 +19,9 @@
 }
 
 .subTitle{
-    @include type.type-style("body-02");
+    @include type.type-style("body-01");
     color: colors.$gray-70;
+    font-size: 1.2rem;
 }
 
 .dashboardCard{
@@ -24,4 +29,5 @@
     flex-wrap: wrap;
     column-gap: spacing.$spacing-07;
     row-gap: spacing.$spacing-05;
+    justify-content: space-between;
 }
