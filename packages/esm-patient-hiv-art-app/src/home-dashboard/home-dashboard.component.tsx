@@ -3,6 +3,13 @@ import styles from './home-dashboard.scss';
 import { useTranslation } from 'react-i18next';
 import DashboardCard from './dashboard-card/dashboard-card.component';
 import { ExtensionSlot } from '@openmrs/esm-framework';
+import {
+  UserMultiple,
+  UserActivity,
+  EventSchedule,
+  ChangeCatalog,
+  WatsonHealthAiResultsVeryHigh,
+} from '@carbon/react/icons';
 
 type HomeDashboardProps = {};
 
@@ -17,11 +24,27 @@ const HomeDashboard: React.FC<HomeDashboardProps> = () => {
         <p className={styles.subTitle}>{t('dashboard', 'Dashboard')}</p>
       </section>
       <section className={styles.dashboardCard}>
-        <DashboardCard label={t('newClients', 'New Clients')} count={12} />
-        <DashboardCard label={t('activeClients', 'Active Clients')} count={23} />
-        <DashboardCard label={t('missedAppointments', 'Missed appointments')} count={42} />
-        <DashboardCard label={t('interuptedTreatments', 'Interupted Treatment')} count={23} />
-        <DashboardCard label={t('hivViralLoad', 'High Viral Load')} count={22} />
+        <DashboardCard label={t('newClients', 'New Clients')} count={12} dashboardIcon={<UserMultiple size={48} />} />
+        <DashboardCard
+          label={t('activeClients', 'Active Clients')}
+          count={23}
+          dashboardIcon={<UserActivity size={48} />}
+        />
+        <DashboardCard
+          label={t('missedAppointments', 'Missed appointments')}
+          count={42}
+          dashboardIcon={<EventSchedule size={48} />}
+        />
+        <DashboardCard
+          label={t('interuptedTreatments', 'Interupted Treatment')}
+          count={23}
+          dashboardIcon={<ChangeCatalog size={48} />}
+        />
+        <DashboardCard
+          label={t('hivViralLoad', 'High Viral Load')}
+          count={22}
+          dashboardIcon={<WatsonHealthAiResultsVeryHigh size={48} />}
+        />
       </section>
       <section className="appointments">
         <ExtensionSlot name="hiv-art-dashboard-slot" />

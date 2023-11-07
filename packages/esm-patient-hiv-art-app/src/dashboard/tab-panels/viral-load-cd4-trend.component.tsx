@@ -60,9 +60,7 @@ const ViralLoadCD4Trend: React.FC<ViralLoadCD4TrendProps> = ({ patientUuid }) =>
   }
 
   if (chartData.length === 0) {
-    return (
-      <EmptyState displayText={t('viralEmpty', 'Viral load & CD4 ')} headerTitle={t('vL&CD4Chart', 'VL & CD4 Chart')} />
-    );
+    return <EmptyState displayText="Viral load & CD4 " headerTitle="VL & CD4 Chart" />;
   }
   return <LineChart data={chartData} options={chartOptions} />;
 };

@@ -17,7 +17,7 @@ const dashboardPanelMap = {
     errorMessage: 'Client enrollment',
   },
   initialHIVCareAndART: {
-    formUuid: '81852aee-3f10-11e4-adec-0800271c1b75',
+    formUuid: 'a5b831b5-168f-4de3-9975-7277f3ed4945',
     encounterType: 'a09b3092-2408-4bc7-b23e-ca126f575bdd',
     dashboardTitle: 'Initial HIV care and ART',
     errorMessage: 'Initial HIV care and ART',
@@ -29,7 +29,7 @@ const dashboardPanelMap = {
     errorMessage: 'ART treatment interruption',
   },
   endOfFollowUp: {
-    formUuid: '3bf40d2b-c8a2-4a7d-9da2-adb33860e0f8',
+    formUuid: '61c0c516-f240-423f-8fc0-14e478809480',
     encounterType: '3bf40d2b-c8a2-4a7d-9da2-adb33860e0f8',
     dashboardTitle: 'End of Follow-up',
     errorMessage: 'end of Follow-up',
