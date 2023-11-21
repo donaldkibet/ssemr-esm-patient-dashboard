@@ -29,6 +29,9 @@ export const usePatientObs = (patientUuid: string, conceptUuids: Array<string>) 
       if (typeof resource.valueQuantity?.value === 'number') {
         results.push(resource);
       }
+      if (typeof resource.valueString === 'string') {
+        results.push(results);
+      }
       return results;
     }, []) ?? [];
 
