@@ -22,7 +22,7 @@ const ViralLoadCD4Trend: React.FC<ViralLoadCD4TrendProps> = ({ patientUuid }) =>
       ?.map((result) => ({
         group: result.code['text'],
         date: result.effectiveDateTime,
-        value: result.valueQuantity.value,
+        value: result.valueQuantity.value ?? result?.valueString,
         key: formatDate(new Date(result.effectiveDateTime), { time: false }),
       }))
       .splice(0, 10) ?? [];
