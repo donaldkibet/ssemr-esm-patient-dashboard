@@ -1,5 +1,6 @@
 import { FHIRResource, fhirBaseUrl, openmrsFetch } from '@openmrs/esm-framework';
 import useSWR from 'swr';
+import orderBy from 'lodash/orderBy';
 
 interface Obs {
   entry: Array<FHIRResource>;
@@ -26,14 +27,9 @@ export const usePatientObs = (patientUuid: string, conceptUuids: Array<string>) 
   const observedResults =
     data?.data?.entry?.reduce((results, entry) => {
       const resource = entry.resource;
-      if (typeof resource.valueQuantity?.value === 'number') {
-        results.push(resource);
-      }
-      if (typeof resource.valueString === 'string') {
-        results.push(results);
-      }
+      results.push(resource);
       return results;
     }, []) ?? [];
 
-  return { obs: observedResults, error, isLoading, isValidating };
+  return { obs: orderBy(observedResults, 'effectiveDateTime'), error, isLoading, isValidating };
 };
