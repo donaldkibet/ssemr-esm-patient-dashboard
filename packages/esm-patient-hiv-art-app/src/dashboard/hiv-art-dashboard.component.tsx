@@ -18,19 +18,19 @@ const dashboardPanelMap = {
   },
   initialHIVCareAndART: {
     formUuid: 'a5b831b5-168f-4de3-9975-7277f3ed4945',
-    encounterType: 'a09b3092-2408-4bc7-b23e-ca126f575bdd',
+    encounterType: '81852aee-3f10-11e4-adec-0800271c1b75',
     dashboardTitle: 'Initial HIV care and ART',
     errorMessage: 'Initial HIV care and ART',
   },
   artTreatmentInteruption: {
     formUuid: '32229880-468e-4ce2-96bd-a61a999c1743',
-    encounterType: '23299285-25b0-494f-b4e3-546f208762e8',
+    encounterType: '81fbaddd-3f10-11e4-adec-0800271c1b75',
     dashboardTitle: 'ART treatment interruption',
     errorMessage: 'ART treatment interruption',
   },
   endOfFollowUp: {
     formUuid: '61c0c516-f240-423f-8fc0-14e478809480',
-    encounterType: '3bf40d2b-c8a2-4a7d-9da2-adb33860e0f8',
+    encounterType: '81e13b91-3f10-11e4-adec-0800271c1b75',
     dashboardTitle: 'End of Follow-up',
     errorMessage: 'end of Follow-up',
   },
