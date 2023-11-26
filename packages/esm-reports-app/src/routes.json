@@ -1,24 +1,22 @@
 {
   "$schema": "https://json.openmrs.org/routes.schema.json",
-  "backendDependencies": {
-    "fhir2": "^1.2.0",
-    "webservices.rest": "^2.24.0"
-  },
   "extensions": [
     {
-      "component": "reportsLinkDashboardLeftPanel",
-      "name": "reports-left-panel-link",
+      "name": "home-reports-dashboard-link",
+      "component": "homeReportsLink",
       "slot": "homepage-dashboard-slot",
       "meta": {
-        "name": "reports-dashboard",
-        "title": "Reports dashboard",
-        "slot": "reports-dashboard-slot"
-      }
+        "name": "reports",
+        "slot": "reports-dashboard-slot",
+        "title": "Reports"
+      },
+      "online": true,
+      "offline": true
     },
     {
-      "name": "reports-dashboard-home",
+      "name": "root-reports-dashboard",
       "slot": "reports-dashboard-slot",
-      "component": "root"
+      "component": "rootReportsHome"
     }
   ],
   "pages": []
