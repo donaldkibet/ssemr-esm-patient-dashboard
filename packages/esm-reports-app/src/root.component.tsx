@@ -7,7 +7,7 @@ const swrConfiguration = {
 };
 
 const RootComponent: React.FC = () => {
-  const baseName = window.getOpenmrsSpaBase() + 'home/hivcare-and-art';
+  const baseName = window.getOpenmrsSpaBase() + 'home/reports';
 
   return (
     <main>
