@@ -1,13 +1,13 @@
-import React from "react";
-import { SWRConfig } from "swr";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React from 'react';
+import { SWRConfig } from 'swr';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const swrConfiguration = {
   errorRetryCount: 3,
 };
 
 const RootComponent: React.FC = () => {
-  const baseName = window.getOpenmrsSpaBase() + "home/hivcare-and-art";
+  const baseName = window.getOpenmrsSpaBase() + 'home/hivcare-and-art';
 
   return (
     <main>

@@ -1,1 +1,1 @@
-export const moduleName = "@ssemr/esm-reports-app";
+export const moduleName = '@ssemr/esm-reports-app';
