@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.openmrs.org/routes.schema.json",
+  "backendDependencies": {
+    "fhir2": "^1.2.0",
+    "webservices.rest": "^2.24.0"
+  },
+  "extensions": [
+    {
+      "component": "reportsLinkDashboardLeftPanel",
+      "name": "reports-left-panel-link",
+      "slot": "homepage-dashboard-slot",
+      "meta": {
+        "name": "reports-dashboard",
+        "title": "Reports dashboard",
+        "slot": "reports-dashboard-slot"
+      }
+    },
+    {
+      "name": "reports-dashboard-home",
+      "slot": "reports-dashboard-slot",
+      "component": "root"
+    }
+  ],
+  "pages": []
+}
