@@ -1,12 +1,11 @@
-import { getAsyncLifecycle, getSyncLifecycle, defineConfigSchema } from '@openmrs/esm-framework';
+import { defineConfigSchema, getAsyncLifecycle, getSyncLifecycle } from '@openmrs/esm-framework';
+import { moduleName } from './constants';
 import { configSchema } from './config-schema';
-import { createReportsDashboardLink } from './left-panel-link.component';
-import { reportsMeta } from './reports-meta';
-
-const moduleName = '@ssemr/esm-reports-app';
+import { homeDashboardMeta } from './dashboard.meta';
+import { createDashboardLink as createHomeDashboardLink } from './ReportsDashboardLink';
 
 const options = {
-  featureName: 'reports-dashboard',
+  featureName: 'esm-reports-app',
   moduleName,
 };
 
@@ -16,6 +15,6 @@ export function startupApp() {
   defineConfigSchema(moduleName, configSchema);
 }
 
-export const root = getAsyncLifecycle(() => import('./root.component'), options);
+export const rootReportsHome = getAsyncLifecycle(() => import('./root.component'), options);
 
-export const reportsLinkDashboardLeftPanel = getSyncLifecycle(createReportsDashboardLink(reportsMeta), options);
+export const homeReportsLink = getSyncLifecycle(createHomeDashboardLink(homeDashboardMeta), options);
