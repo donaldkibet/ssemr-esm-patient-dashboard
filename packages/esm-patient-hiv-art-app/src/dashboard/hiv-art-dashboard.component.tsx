@@ -31,7 +31,7 @@ const dashboardPanelMap = {
   endOfFollowUp: {
     formUuid: '61c0c516-f240-423f-8fc0-14e478809480',
     encounterType: '81e13b91-3f10-11e4-adec-0800271c1b75',
-    dashboardTitle: 'End of Follow-up',
+    dashboardTitle: 'Treatment Outcome',
     errorMessage: 'end of Follow-up',
   },
 };
